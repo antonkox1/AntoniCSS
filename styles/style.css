@@ -1,5 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@400;700;900&display=swap');
+
+html,
+body {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+.body {
+    background: #E5E5E5;
+    font-family: 'Heebo', sans-serif;
+}
+
+
 .content-panel {
+    display: flex;
+    justify-content: right;
+}
 
-display: flex;
+.content-panel__list {
+    list-style: none;
+    display: flex;
+    margin-top: 30px;
+    padding-left: 0px;
+}
 
+.content-panel__item {
+    padding-right: 60px;
+}
+
+.content-panel_link.active {
+    font-weight: 700;
+    position: relative;
+}
+
+.active::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 22px;
+    padding-top: 3px;
+    border-bottom: 2px solid #000; 
+}
+
+.content-panel_link {
+    color: #000000;
+    font-size: 20px;
+    text-decoration: none;    /* Убрать подчеркивание */
+ 
 }
