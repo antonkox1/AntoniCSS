@@ -1,52 +1,55 @@
-@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@400;700;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@400;700;900&display=swap");
 
 html,
 body {
-    height: 100%;
-    padding: 0;
-    margin: 0;
-    border: 0;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  border: 0;
 }
 
 .body {
-    background: #E5E5E5;
-    font-family: 'Heebo', sans-serif;
+  background: #e5e5e5;
+  font-family: "Heebo", sans-serif;
 }
 
-
 .content-panel {
-    display: flex;
-    justify-content: right;
+  display: flex;
+  justify-content: right;
 }
 
 .content-panel__list {
-    list-style: none;
-    display: flex;
-    margin-top: 30px;
-    padding-left: 0px;
+  list-style: none;
+  display: flex;
+  margin-top: 30px;
+  padding-left: 0px;
 }
 
 .content-panel__item {
-    padding-right: 60px;
+  margin-right: 60px;
 }
 
-.content-panel_link.active {
-    font-weight: 700;
-    position: relative;
+.content-panel_link:hover::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 22px;
+  padding-top: 3px;
+  border-bottom: 2px solid #000;
+  animation: 0.5s show;
 }
 
-.active::after {
-    content: "";
-    position: absolute;
-    display: block;
-    width: 22px;
-    padding-top: 3px;
-    border-bottom: 2px solid #000; 
+@keyframes show {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .content-panel_link {
-    color: #000000;
-    font-size: 20px;
-    text-decoration: none;    /* Убрать подчеркивание */
- 
+  color: #000000;
+  font-size: 20px;
+  text-decoration: none; /* Убрать подчеркивание */
 }
