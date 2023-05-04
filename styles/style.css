@@ -12,10 +12,20 @@ body {
   background: #e5e5e5;
   font-family: "Heebo", sans-serif;
 }
+.content-main {
+  background-image: url(/image/backgraund.svg);
+}
+
+.content-container {
+  max-width: 1200px;
+  display: flex;
+  justify-content: center;
+}
 
 .content-panel {
   display: flex;
-  justify-content: right;
+  
+  position: absolute;
 }
 
 .content-panel__list {
@@ -33,11 +43,11 @@ body {
   content: "";
   position: absolute;
   display: block;
-  width: 22px;
+  width: 28px;
   padding-top: 3px;
-  border-bottom: 2px solid #000;
+  border-bottom: 2px solid #13E780;
   animation: 0.5s show;
-}
+} 
 
 @keyframes show {
   from {
@@ -49,7 +59,45 @@ body {
 }
 
 .content-panel_link {
-  color: #000000;
+  color: #fff;
   font-size: 20px;
   text-decoration: none; /* Убрать подчеркивание */
+}
+
+.content_wrap{
+    background-color: rgba(255, 255, 255, 0.13);
+    position: relative;
+    border-radius: 5px;
+    padding: 60px 160px;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 15px rgb(0 54 60 / 20%);
+    min-height: 500px;
+    max-width: 500px;
+    margin: 100px 0;
+}
+
+.content_wrap__h1 {
+  font-size: 20px;
+  color: #fff;
+  font-weight: 300;
+}
+
+.content_wrap__h1 > i {
+  line-height: 1.7;
+  font-weight: 700;
+  font-size: 38px;
+}
+
+.content_row {
+  display: flex;
+
+}
+
+.content_row__column {
+  max-height: 255px;
+  max-width: 211px;
+  background-color: #fff;
 }
