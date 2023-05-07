@@ -24,7 +24,6 @@ h1,h2,b,p{
   background-size: cover;
   position: relative;
   
-}
 
 .content-container {
   max-width: 1200px;
@@ -32,21 +31,42 @@ h1,h2,b,p{
   justify-content: center;
   position: relative;
   margin: auto;
-  
 }
 
 .content-panel {
+  margin-top: 16px;
   display: flex;
   position: absolute;
   width: 100%;
-  justify-content: center;
+  justify-content: space-between;
 }
+
+}
+.content_logo {
+  display: flex;
+  align-items: center;
+  margin-left: 30px;
+  text-decoration: none;
+}
+
+.content-panel p {
+  font-size: 20px;
+  margin-left: 8px;
+  color: #fff;
+}
+
+.content-panel span {
+  color: #00ff88;
+  user-select: none;  
+}
+
 
 .content-panel__list {
   list-style: none;
   display: flex;
-  margin: 30px -10px 0px -30px;
+  margin: 0px 10px 0px -30px;
   padding-left: 0px;
+  align-items: center;
 }
 
 .content-panel__item {
@@ -148,8 +168,7 @@ h2 > b {
   font-weight: 500;
 }
 
-p
-{
+.content_row p {
   font-size: 12px;
   font-weight: 400;
   color: #707070;
