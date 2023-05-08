@@ -9,8 +9,9 @@ body {
   
 }
 
-h1,h2,b,p{
+h1,h2,h3,b,p,small{
   font-style: normal;
+  font-family: "Heebo", sans-serif;
 }
 
 .body {
@@ -178,3 +179,59 @@ h2 > b {
 .rel {
   position: relative
 }
+
+.content_container__section {
+ margin-top: 40px;
+  height: inherit;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ 
+}
+
+.background_section{
+  padding: 20px;
+  background-image: url(/Project_Sh/image/bg_blog.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 50% 200px;
+}
+
+.content__up_video {
+  color: #00363c;
+  font-size: 30px;
+ 
+}
+
+.content__up2_video {
+  font-size: 18px;
+  color: #565656;
+  font-weight: 400;
+  margin: auto;
+  margin-bottom: 60px;
+  max-width: 550px;
+  text-align: center;
+ 
+}
+
+.lazy {
+  max-width: 770px;
+  box-shadow: 0 3px 6px 0 rgba(0,0,0,.16);
+  border-radius: 5px;
+}
+
+@media screen and (max-width: 1550px) {
+  .lazy {
+    max-width: 550px;
+  }
+}
+
+
+footer {
+    margin-top: 100px;
+    padding-top: 150px;
+    padding-bottom: 100px;
+    background-image: linear-gradient(90deg,#8748cf,#27cc8d);
+}
+
