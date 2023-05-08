@@ -21,7 +21,7 @@ h1,h2,h3,b,p,small{
 }
 .content-main {
   font-family: "Heebo", sans-serif;
-  background-image: url(/AntoniCSS/image/backgraund.svg);
+  background-image: url(image/backgraund.svg);
   background-size: cover;
   position: relative;
   
@@ -192,7 +192,7 @@ h2 > b {
 
 .background_section{
   padding: 20px;
-  background-image: url(/AntoniCSS/image/bg_blog.svg);
+  background-image: url(image/bg_blog.svg);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: 50% 200px;
