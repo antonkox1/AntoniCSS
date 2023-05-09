@@ -209,7 +209,7 @@ h2 > b {
   color: #565656;
   font-weight: 400;
   margin: auto;
-  margin-bottom: 60px;
+  margin-bottom: 50px;
   max-width: 550px;
   text-align: center;
  
@@ -219,12 +219,18 @@ h2 > b {
   max-width: 770px;
   box-shadow: 0 3px 6px 0 rgba(0,0,0,.16);
   border-radius: 5px;
+  margin-bottom: 0px;
 }
 
 @media screen and (max-width: 1550px) {
   .lazy {
     max-width: 550px;
   }
+}
+
+.comment_container {
+
+  
 }
 
 
@@ -235,3 +241,45 @@ footer {
     background-image: linear-gradient(90deg,#8748cf,#27cc8d);
 }
 
+
+
+.comments_main{
+  margin-top: 40px;
+  height: inherit;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.swiper {
+  max-width: 900px;
+  height: 400px;
+  margin: 0;
+  box-shadow: 0 3px 6px 0 rgba(0,0,0,.16);
+  border-radius: 5px;
+}
+
+.swiper-slide {
+ display: flex;
+}
+
+.comments__text{
+  position: absolute;
+  z-index: 2;
+  color: #fff;
+  padding: 20px 50px 20px 50px;
+}
+.swiper-button-prev {
+
+}
+.swiper-button-next{
+  
+}
+
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+ color: white;
+ font-size: 30px;
+}
