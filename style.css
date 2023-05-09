@@ -270,6 +270,11 @@ footer {
   color: #fff;
   padding: 20px 50px 20px 50px;
 }
+.comments__text__p {
+  text-align: justify;
+ 
+}
+
 .swiper-button-prev {
 
 }
