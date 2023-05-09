@@ -230,9 +230,7 @@ h2 > b {
 
 .comment_container {
 
-  
 }
-
 
 footer {
     margin-top: 100px;
@@ -240,8 +238,6 @@ footer {
     padding-bottom: 100px;
     background-image: linear-gradient(90deg,#8748cf,#27cc8d);
 }
-
-
 
 .comments_main{
   margin-top: 40px;
@@ -264,27 +260,23 @@ footer {
  display: flex;
 }
 
-.comments__text{
+.comments__text {
   position: absolute;
   z-index: 2;
   color: #fff;
   padding: 20px 50px 20px 50px;
 }
+
 .comments__text__p {
   text-align: justify;
- 
 }
-
-.swiper-button-prev {
-
-}
-.swiper-button-next{
-  
-}
-
 
 .swiper-button-prev::after,
 .swiper-button-next::after {
  color: white;
  font-size: 30px;
+}
+
+.swiper-pagination-bullet {
+  background-color: #fff;
 }
